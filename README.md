@@ -27,8 +27,9 @@ Follow these steps carefully to get your development environment ready:
 **Important**: Use the repository URL that was created specifically for you through GitHub Classroom. This ensures you have the correct permissions to push your work.
 
 ```bash
-# Navigate to your Code directory
-cd ~/Code
+# Navigate to your development directory
+# IMPORTANT: Avoid OneDrive/cloud sync folders - they cause issues with node_modules
+cd ~/Code  # or wherever you keep your coding projects (NOT in OneDrive)
 
 # Clone YOUR repository (replace YOUR-USERNAME with your actual GitHub username)
 gh repo clone YOUR-USERNAME/repository-name
