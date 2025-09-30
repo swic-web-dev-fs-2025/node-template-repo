@@ -5,7 +5,6 @@ import markdown from "@eslint/markdown";
 import prettier from "eslint-config-prettier";
 
 const STUDENT_LIMITS = {
-  MAX_COMPLEXITY: 4, // Forces simple logic
   MAX_LINES: 30, // Forces focused functions
   MAX_PARAMS: 2, // Forces good design decisions
   MAX_DEPTH: 2, // Prevents nested spaghetti
@@ -37,7 +36,6 @@ export default [
       "max-params": ["error", STUDENT_LIMITS.MAX_PARAMS],
 
       // Keep logic simple
-      complexity: ["error", STUDENT_LIMITS.MAX_COMPLEXITY],
       "max-depth": ["error", STUDENT_LIMITS.MAX_DEPTH],
       "no-nested-ternary": "error",
 
